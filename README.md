@@ -24,3 +24,21 @@ Or alternatviely:
 py -m pip install pyautogui
 py -m pip install Pillow
 ```
+
+## Usage:
+
+Once you have either cloned or downloaded this, go into the folder with ``FileExplorer`` and ``Shift`` + ``Right Click``.
+
+
+![OpenPowerShell](img/OpenPowerShell.png)
+
+Select 'Open PowerShell window here' and run:
+
+```
+py .\autoclick.py
+```
+
+Position the game, so that the the placard is centered in the left third of the screen:
+
+![PositionGame](img/PositionGame.png)
+
