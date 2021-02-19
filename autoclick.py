@@ -12,7 +12,7 @@ def locate_click(imgname, alt=None, t=0.1, button="left"):
 
     # Try to find image from screengrab.
     box = locateOnScreen(imgname)
-    print(imgname, "found at: ", box)
+    print(imgname, "found at:\n\t", box)
 
     # It not found, try to find alt image.
     if box is None:
@@ -36,6 +36,18 @@ def long_click(t=0.100, button="left"):
 # Main logic.
 #
 
+# Define image paths:
+img_dir = "img/"
+
+img_purchaseland = img_dir+"PurchaseLand.png"
+img_purchaseland_alt = None;
+
+img_freecompany = img_dir+"FreeCompany.png"
+img_freecompany_alt = img_dir+"FreeCompanyAlt.png"
+
+img_yes = img_dir+"Yes.png"
+img_yes_alt = None; 
+
 count = 1;
 while(True):
     # Option to pause every 5 iteratons to stop program
@@ -52,15 +64,14 @@ while(True):
     long_click(button="right")
 
     # Attempt to find gui buttons. 
-    if not locate_click("PurchaseLand.png", t=0.3): 
+    if not locate_click(img_purchaseland, img_purchaseland_alt, t=0.35): 
         press("esc");
         continue
-    if not locate_click("FreeCompanyAlt.png", "FreeCompany.png"): 
+    if not locate_click(img_freecompany_alt, img_freecompany): 
         press("esc");
         press("esc");
         continue
-    if not locate_click("Yes.png"): 
-        press("esc");
+    if not locate_click(img_yes, img_yes_alt): 
         press("esc");
         press("esc");
         continue
