@@ -42,3 +42,18 @@ Position the game, so that the the placard is centered in the left third of the 
 
 ![PositionGame](img/PositionGame.png)
 
+It should hopefully click the placard and find be able to find and click the UI elements.
+
+You can of course provide your own images for the UI elements, if you find that it doesn't work. 
+You may also have to edit the code to adjust the image pathes.
+
+Here are the default images:
+
+![PurchaseLand](img/PurchaseLand.png)
+
+![FreeCompany](img/FreeCompany.png)
+![FreeCompanyAlt](img/FreeCompanyAlt.png)
+
+![Yes](img/Yes.png)
+
+
